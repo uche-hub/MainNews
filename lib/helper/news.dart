@@ -45,7 +45,7 @@ class CategoryNewsClass {
 
   Future<void> getNews(String category) async{
 
-    String url = "http://newsapi.org/v2/top-headlines?category=$category&country=us&apiKey=cc03ca1aad6f415cac10317bfd6abe2e";
+    String url = "http://newsapi.org/v2/top-headlines?category=$category&country=ng&apiKey=cc03ca1aad6f415cac10317bfd6abe2e";
 
     var response = await http.get(url);
 
