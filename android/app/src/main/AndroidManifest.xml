@@ -13,7 +13,7 @@
         <!-- TODO: Replace with your real AdMob app ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8204002520550586~6510917622"/>
+            android:value="ca-app-pub-9826399250607284~2331626704"/>
 
         <activity
             android:name=".MainActivity"

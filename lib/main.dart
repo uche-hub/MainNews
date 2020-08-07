@@ -4,7 +4,7 @@ import 'package:firebase_admob/firebase_admob.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  FirebaseAdMob.instance.initialize(appId: 'ca-app-pub-8204002520550586~6510917622');
+  FirebaseAdMob.instance.initialize(appId: 'ca-app-pub-9826399250607284~2331626704');
   runApp(MyApp());
   myBanner
   // typically this happens well before the ad is shown
@@ -53,7 +53,7 @@ BannerAd myBanner = BannerAd(
   // Replace the testAdUnitId with an ad unit id from the AdMob dash.
   // https://developers.google.com/admob/android/test-ads
   // https://developers.google.com/admob/ios/test-ads
-  adUnitId: 'ca-app-pub-8204002520550586/8169293233',
+  adUnitId: 'ca-app-pub-9826399250607284/6079300028',
   size: AdSize.smartBanner,
   targetingInfo: targetingInfo,
   listener: (MobileAdEvent event) {
@@ -65,7 +65,7 @@ InterstitialAd myInterstitial = InterstitialAd(
   // Replace the testAdUnitId with an ad unit id from the AdMob dash.
   // https://developers.google.com/admob/android/test-ads
   // https://developers.google.com/admob/ios/test-ads
-  adUnitId: 'ca-app-pub-8204002520550586/2916966559',
+  adUnitId: 'ca-app-pub-9826399250607284/1213986152',
   targetingInfo: targetingInfo,
   listener: (MobileAdEvent event) {
     print("InterstitialAd event is $event");
