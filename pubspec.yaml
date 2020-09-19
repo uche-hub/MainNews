@@ -17,10 +17,10 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-  http: ^0.12.1
-  cached_network_image: ^2.2.0+1
-  webview_flutter: ^0.3.21
-  firebase_admob: ^0.9.3+2
+  http: ^0.12.2
+  cached_network_image: ^2.3.2+1
+  webview_flutter: ^0.3.22+1
+  firebase_admob: ^0.9.3+4
   flutter:
     sdk: flutter
 
