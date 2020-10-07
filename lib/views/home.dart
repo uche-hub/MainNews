@@ -1,6 +1,16 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:themainnews/Contries/america.dart';
+import 'package:themainnews/Contries/brazil.dart';
+import 'package:themainnews/Contries/canada.dart';
+import 'package:themainnews/Contries/china.dart';
+import 'package:themainnews/Contries/england.dart';
+import 'package:themainnews/Contries/france.dart';
+import 'package:themainnews/Contries/germany.dart';
+import 'package:themainnews/Contries/italy.dart';
+import 'package:themainnews/Contries/japan.dart';
+import 'package:themainnews/Contries/southAfrica.dart';
 import 'package:themainnews/helper/data.dart';
 import 'package:themainnews/helper/news.dart';
 import 'package:themainnews/models/article_model.dart';
@@ -39,11 +49,12 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: DrawerCodeOnly(),
       appBar: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("The Main"),
+            Text("Main"),
             Text("News", style: TextStyle(
               color: Colors.red
             ),)
@@ -184,4 +195,102 @@ class BlogTile extends StatelessWidget {
   }
 }
 
-
+class DrawerCodeOnly extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Drawer(
+      child: new ListView(
+        children: [
+          new DrawerHeader(
+            decoration: new BoxDecoration(
+                image: DecorationImage(
+                    image: ExactAssetImage("images/playstore.png"),
+                    fit: BoxFit.cover
+                )
+            ),
+          ),
+          new ListTile(
+            title: new Text("American News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => America()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("British News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => England()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("French News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => France()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("Chinese News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => China()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("German News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Germany()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("Canadian News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Canada()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("Brazilian News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Brazil()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("Italian News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Italy()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("Japanese News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => Japan()
+              ));
+            },
+          ),
+          new ListTile(
+            title: new Text("South African News"),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => SouthAfrica()
+              ));
+            },
+          )
+        ],
+      ),
+    );
+  }
+}

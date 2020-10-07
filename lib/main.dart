@@ -6,6 +6,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   FirebaseAdMob.instance.initialize(appId: 'ca-app-pub-9826399250607284~2331626704');
   runApp(MyApp());
+
   myBanner
   // typically this happens well before the ad is shown
     ..load()
